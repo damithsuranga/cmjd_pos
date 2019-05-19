@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="com.lowagie.text-2.1.7">
+    <CLASSES>
+      <root url="jar://E:/libs/com.lowagie.text-2.1.7.jar!/" />
+      <root url="jar://E:/libs/commons-beanutils-1.8.3.jar!/" />
+      <root url="jar://E:/libs/commons-collections-3.2.1-1.0.0.jar!/" />
+      <root url="jar://E:/libs/commons-digester-2.1.jar!/" />
+      <root url="jar://E:/libs/itextpdf-5.3.4.jar!/" />
+      <root url="jar://E:/libs/jasperreports-6.7.0.jar!/" />
+      <root url="jar://E:/libs/jasperreports-javaflow-6.7.0.jar!/" />
+      <root url="jar://E:/libs/jcommon-1.0.23.jar!/" />
+      <root url="jar://E:/libs/jfoenix.jar!/" />
+      <root url="jar://E:/libs/jfreechart-1.0.19.jar!/" />
+      <root url="jar://E:/libs/mysql-connector-java-5.1.47.jar!/" />
+      <root url="jar://E:/libs/org-apache-commons-logging.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/src" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="831.0" prefWidth="937.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PlaceOrder">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="180.0" layoutY="14.0" prefHeight="36.0" prefWidth="554.0" text="Star Food City - Place Order" textAlignment="CENTER" textFill="#170997">
+         <font>
+            <Font name="SansSerif Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="199.0" layoutY="81.0" text="Order ID" textFill="#1b768d">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="671.0" layoutY="81.0" text="Order Date" textFill="#1b768d">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="187.0" layoutY="133.0" text="Customer ID" textFill="#1b768d">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="656.0" layoutY="133.0" text="Customer Name" textFill="#1b768d">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtOrderDate" alignment="CENTER" labelFloat="true" layoutX="530.0" layoutY="95.0" prefHeight="25.0" prefWidth="378.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtCustomerName" alignment="CENTER" labelFloat="true" layoutX="533.0" layoutY="155.0" prefHeight="25.0" prefWidth="378.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXTextField>
+      <JFXComboBox fx:id="cmbCustomerID" labelFloat="true" layoutX="69.0" layoutY="155.0" prefHeight="25.0" prefWidth="356.0">
+         <effect>
+            <DropShadow color="#4c87d0" />
+         </effect></JFXComboBox>
+      <Line endX="820.0" layoutX="110.0" layoutY="215.0" startX="-100.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="439.0" layoutY="226.0" text="Item Code" textFill="#156686">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="191.0" layoutY="287.0" text="Description" textFill="#156686">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="172.0" layoutY="349.0" text="Quantity On Hand" textFill="#156686">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="678.0" layoutY="349.0" text="Quantity" textFill="#156686">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="674.0" layoutY="287.0" text="Unit Price" textFill="#156686">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbItemCode" layoutX="333.0" layoutY="247.0" prefHeight="25.0" prefWidth="303.0">
+         <effect>
+            <DropShadow color="#4c87d0" />
+         </effect></JFXComboBox>
+      <JFXTextField fx:id="txtdescription" alignment="CENTER" layoutX="68.0" layoutY="309.0" prefHeight="25.0" prefWidth="356.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtUnitPrice" alignment="CENTER" layoutX="530.0" layoutY="309.0" prefHeight="25.0" prefWidth="378.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtQuantityOnHand" alignment="CENTER" layoutX="68.0" layoutY="364.0" prefHeight="25.0" prefWidth="356.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtQuantity" alignment="CENTER" layoutX="531.0" layoutY="364.0" prefHeight="25.0" prefWidth="378.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXTextField>
+      <JFXButton fx:id="btnNewOrder" layoutX="14.0" layoutY="38.0" onAction="#NewOrderbutton" prefHeight="25.0" prefWidth="120.0" text="+New Order" textFill="#310ea4">
+         <font>
+            <Font name="SansSerif Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnSave" layoutX="721.0" layoutY="409.0" onAction="#SavePlaceOrder" prefHeight="25.0" prefWidth="93.0" text="Save" textFill="#2b0f90">
+         <font>
+            <Font name="SansSerif Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblPlaceOrder" layoutX="9.0" layoutY="458.0" prefHeight="264.0" prefWidth="692.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Code" />
+          <TableColumn prefWidth="262.0" text="Description" />
+            <TableColumn prefWidth="113.0" text="Quantity" />
+            <TableColumn prefWidth="130.0" text="Unit Price" />
+            <TableColumn prefWidth="110.0" text="Total" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="796.0" layoutY="481.0" prefHeight="17.0" prefWidth="44.0" text="Total" textFill="#196986">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="767.0" layoutY="547.0" prefHeight="17.0" prefWidth="102.0" text="Paid Amount" textFill="#196986">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="778.0" layoutY="600.0" prefHeight="17.0" prefWidth="83.0" text="Discount" textFill="#196986">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="784.0" layoutY="656.0" prefHeight="17.0" prefWidth="72.0" text="Balance" textFill="#196986">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="68.0" layoutY="743.0" prefHeight="26.0" prefWidth="111.0" text="Net Total" textFill="#360d9e">
+         <font>
+            <Font name="SansSerif Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtTotal" alignment="CENTER" layoutX="727.0" layoutY="506.0" prefHeight="25.0" prefWidth="200.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtPaid" alignment="CENTER" layoutX="728.0" layoutY="564.0" prefHeight="25.0" prefWidth="200.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtDiscount" alignment="CENTER" layoutX="727.0" layoutY="625.0" prefHeight="25.0" prefWidth="200.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtBalance" alignment="CENTER" layoutX="727.0" layoutY="680.0" prefHeight="25.0" prefWidth="200.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtNetTotal" alignment="CENTER" layoutX="9.0" layoutY="769.0" prefHeight="25.0" prefWidth="253.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXTextField>
+      <JFXButton fx:id="btnDelete" layoutX="833.0" layoutY="410.0" onAction="#deletebutton" prefHeight="25.0" prefWidth="83.0" text="Delete" textFill="#461ca1">
+         <font>
+            <Font name="SansSerif Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtOrderID" layoutX="67.0" layoutY="96.0" prefHeight="25.0" prefWidth="356.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnPlaceOrder" layoutX="778.0" layoutY="757.0" onAction="#PlaceOrderbutton" prefHeight="46.0" prefWidth="129.0" text="Place Order" textFill="#320db5">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="placeImage" fitHeight="46.0" fitWidth="49.0" layoutX="671.0" layoutY="9.0">
+         <image>
+            <Image url="@../../../SMS/User_Customers.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
